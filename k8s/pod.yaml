@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-world-app
+spec:
+  containers:
+    - name: hell-world
+      image: velutha/docker-k8s-demo-app
+      ports:
+        - name: web
+          containerPort: 3000
